@@ -10,4 +10,7 @@ describe ("string calculator",()=>{
     test("add two numbers by comma seperated",()=>{
         expect(Calculator("1,2")).toBe(3)
     })
+    test("add multiple comma seperated numbers",()=>{
+        expect(Calculator("1,2,3,4,5")).toBe(15)
+    })
 })
