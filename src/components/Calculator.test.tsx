@@ -21,7 +21,14 @@ describe ("string calculator",()=>{
     })
     test("throws error for single negative number", () => {
         expect(()=>Calculator("-1")).toThrow("negative numbers not allowed -1");
-      });
+      })
+      
+    test("multiple negative numbers not accepted",()=>{
+        expect(()=>Calculator("-1,-2,-3")).toThrow("negative numbers not allowed -1,-2");
+    })
+
+      
+
       
 
 
