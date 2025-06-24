@@ -6,7 +6,7 @@ export function Calculator(numbers: string): number {
     if (numbers.startsWith("//")) {
         const parts = numbers.split("\n");
         delimiter = new RegExp(parts[0].slice(2));
-        numberString = parts[1];
+        numberString = parts[1] ;
     }
 
     const numArray = numberString.split(delimiter).map(Number);
