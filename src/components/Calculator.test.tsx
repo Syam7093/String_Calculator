@@ -19,4 +19,11 @@ describe ("string calculator",()=>{
     test("handles the custom delimiter",()=>{
         expect(Calculator("//;\n1;2")).toBe(3)
     })
+    test("throws error for single negative number", () => {
+        expect(()=>Calculator("-1")).toThrow("negative numbers not allowed -1");
+      });
+      
+
+
+
 })
