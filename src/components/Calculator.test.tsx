@@ -16,4 +16,7 @@ describe ("string calculator",()=>{
     test("handles new line as delimiter",()=>{
         expect(Calculator("1\n2,3")).toBe(6)
     })
+    test("handles the custom delimiter",()=>{
+        expect(Calculator("//;\n1;2")).toBe(3)
+    })
 })
