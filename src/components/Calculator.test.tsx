@@ -13,4 +13,7 @@ describe ("string calculator",()=>{
     test("add multiple comma seperated numbers",()=>{
         expect(Calculator("1,2,3,4,5")).toBe(15)
     })
+    test("handles new line as delimiter",()=>{
+        expect(Calculator("1\n2,3")).toBe(6)
+    })
 })
